@@ -2,6 +2,10 @@ export interface INavigation {
   title?: string;
 }
 
+export interface IFooter {
+  title?: string;
+}
+
 export interface IArticle {
 	title: string;
 	image: string;

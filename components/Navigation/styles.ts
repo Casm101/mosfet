@@ -14,5 +14,5 @@ export const NavBar = styled.div`
   height: 8vh;
 
   background-color: #0d0d0d;
-  border-bottom: 1px solid #1f1f1f;
+  border-bottom: 1px dashed #1f1f1f;
 `;
