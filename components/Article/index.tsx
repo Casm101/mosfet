@@ -9,10 +9,6 @@ export const Article = memo<IArticle>(({ title, date, type }) => {
 
 	const [collapseState, setCollapseState] = useState(false);
 
-	useEffect(() => {
-    console.log(collapseState);
-  }, [collapseState]);
-
   return (
     <ArticleCard
       open={collapseState}

@@ -17,7 +17,7 @@ export const ArticleCard = styled.div<{ open: boolean }>`
     margin-top: 1.5rem;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    //transition: max-height 0.2s ease-out;
 
     .imageContainer {
       width: 100%;
@@ -34,6 +34,6 @@ export const ArticleList = styled.div`
   flex-direction: column;
 
   max-width: 700px;
-  width: 90%;
+  width: 85%;
   margin-top: 100px;
 `;

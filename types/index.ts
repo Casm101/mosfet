@@ -8,3 +8,7 @@ export interface IArticle {
 	type: string;
 	open?: boolean;
 }
+
+export interface IIcon {
+	color?: string;
+}
