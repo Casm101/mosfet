@@ -16,14 +16,17 @@ export const getStaticProps = async () => {
 
 export default function Home(data: any) {
 
-	console.log(data);
+	console.log("data", data);
+	console.log("content:encoded", data.rssFeed.items[0]["content:encoded"]);
 
 	const articleArray = data.rssFeed.items.map((a: any, key: string) => {
 		return (
       <Article
         title={a.title}
+				image={""}
+				content={a.content}
         date={a.pubDate}
-        type={a.categories[0]}
+        type={a.categories}
 				key={key}
       />
     );

@@ -1,12 +1,12 @@
 import React from "react";
 import { IIcon } from "../types";
 
-export const BookmarkIcon = ({ color = "#4A4A4A" }: IIcon) => {
+export const BookmarkIcon = ({ color = "#4A4A4A", size = { h: 24, w: 24 } }: IIcon) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
+      width={size.w}
+      height={size.h}
       fill={"none"}
       stroke={color}
       strokeWidth="2"
