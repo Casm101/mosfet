@@ -1,7 +1,7 @@
 import React from "react";
 import { IIcon } from "../types";
 
-export const RSSIcon = ({ color = "#4A4A4A" }: IIcon) => {
+export const RSSIcon = ({ color = "#8F8F8F" }: IIcon) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
