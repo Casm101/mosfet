@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import Parser from "rss-parser";
-import { Article, ArticleList, Navigation } from "../components";
+import { Article, ArticleList, Footer, Navigation } from "../components";
 
 
 export const getStaticProps = async () => {
@@ -38,6 +38,7 @@ export default function Home(data: any) {
       <ArticleList>
         {articleArray && articleArray}
       </ArticleList>
+			<Footer />
     </div>
   );
 };
