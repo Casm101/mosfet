@@ -23,11 +23,11 @@ export default function Home(data: any) {
 		return (
       <Article
         title={a.title}
-				image={""}
-				content={a.content}
+        image={a["content:encoded"]}
+        content={a.content}
         date={a.pubDate}
         type={a.categories}
-				key={key}
+        key={key}
       />
     );
 	});
