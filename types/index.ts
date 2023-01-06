@@ -8,7 +8,6 @@ export interface IFooter {
 
 export interface IArticle {
 	title: string;
-	image: string;
 	content: any;
 	date: string;
 	type: string[];

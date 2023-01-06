@@ -37,8 +37,9 @@ export const ArticleCard = styled.div<{ open: boolean }>`
     overflow: hidden;
     margin-top: 0;
 
-    .imageContainer {
+    img {
       width: 100%;
+			height: auto;
     }
 
     .contents {

@@ -23,8 +23,7 @@ export default function Home(data: any) {
 		return (
       <Article
         title={a.title}
-        image={a["content:encoded"]}
-        content={a.content}
+        content={a["content:encoded"]}
         date={a.pubDate}
         type={a.categories}
         key={key}
