@@ -46,6 +46,9 @@ export const ArticleCard = styled.div<{ open: boolean }>`
       p {
         padding: 0.5rem 0;
       }
+			a {
+				color: #8F8F8F;
+			}
     }
 
     &.open {
