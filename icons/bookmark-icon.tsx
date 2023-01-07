@@ -3,6 +3,7 @@ import { IIcon } from "../types";
 
 export const BookmarkIcon = ({
   color = "#8F8F8F",
+	fill = false,
   size = { h: 24, w: 24 },
 }: IIcon) => {
   return (
@@ -10,7 +11,7 @@ export const BookmarkIcon = ({
       xmlns="http://www.w3.org/2000/svg"
       width={size.w}
       height={size.h}
-      fill={"none"}
+      fill={fill ? color : "none"}
       stroke={color}
       strokeWidth="2"
       viewBox="0 0 24 24"

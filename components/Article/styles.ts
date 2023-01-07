@@ -7,18 +7,18 @@ export const ArticleCard = styled.div<{ open: boolean }>`
     align-items: center;
     gap: 0.5rem;
     width: 100%;
-    cursor: pointer;
 
-		.title {
-			font-size: 1.5rem;
-		}
-		.subtitle {
-			font-size: 0.9rem;
-			padding: 0.5rem 0;
+    .title {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    .subtitle {
+      font-size: 0.9rem;
+      padding: 0.5rem 0;
 
-			display: flex;
-			gap: .5rem;
-		}
+      display: flex;
+      gap: 0.5rem;
+    }
 
     .bookMark {
       transition: opacity 0.15s;
@@ -39,16 +39,16 @@ export const ArticleCard = styled.div<{ open: boolean }>`
 
     img {
       width: 100%;
-			height: auto;
+      height: auto;
     }
 
     .contents {
       p {
         padding: 0.5rem 0;
       }
-			a {
-				color: #8F8F8F;
-			}
+      a {
+        color: #8f8f8f;
+      }
     }
 
     &.open {

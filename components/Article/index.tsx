@@ -4,7 +4,7 @@ import * as dayjs from "dayjs";
 
 import { IArticle } from "../../types";
 import { ArticleCard, ArticleList } from "./styles";
-import { BookmarkIcon } from "../../icons";
+import { BookmarkButton } from "../BookmarkButton";
 
 export const Article = memo<IArticle>(({ title, content, date, type }) => {
 
@@ -15,16 +15,16 @@ export const Article = memo<IArticle>(({ title, content, date, type }) => {
 	});
 
   return (
-    <ArticleCard
-      open={collapseState}
-      onClick={() => setCollapseState(!collapseState)}
-    >
+    <ArticleCard open={collapseState}>
       <div className="articleHeader">
         <span>
-          <p className="title">{title}</p>
+          <p className="title" onClick={() => setCollapseState(!collapseState)}>
+            {title}
+          </p>
           <p className="subtitle">
-            <span>{dayjs(date).format("MMMM DD, YYYY").toUpperCase()}</span> | {categories} |{" "}
-            <BookmarkIcon size={{ h: 18, w: 18 }} />
+            <span>{dayjs(date).format("MMMM DD, YYYY").toUpperCase()}</span> |{" "}
+            {categories} |{" "}
+            <BookmarkButton articleID={"1"} article={undefined} />
           </p>
         </span>
       </div>

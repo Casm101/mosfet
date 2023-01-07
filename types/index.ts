@@ -16,6 +16,7 @@ export interface IArticle {
 
 export interface IIcon {
 	color?: string;
+	fill?: boolean;
 	size?: {
 		h: number,
 		w: number,
@@ -25,5 +26,15 @@ export interface IIcon {
 
 export interface IDropMenu {
 	className: "left" | "right";
+}
 
+export interface IBookmarkButton {
+	articleID: string;
+	article: any;
+}
+
+export interface IBookmark {
+	title: string;
+	date: string;
+	content: string;
 }
