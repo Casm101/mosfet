@@ -8,7 +8,7 @@
   <h3 align="center">Transistor</h3>
 
   <p align="center">
-    Transistor is an open source RSS feed reader based on <a href="https://mosfet.net/">Mosfet</a>.
+    Transistor is an open source customizable RSS feed reader based on <a href="https://mosfet.net/">Mosfet</a> by <a href="https://n-o-d-e.net/">N-O-D-E</a>.
     <br />
     <a href="https://github.com/Casm101/transistor"><strong>Read the docs »</strong></a>
     <br />
@@ -49,8 +49,9 @@
 
 ### Built With:
 
-* [Svelte - TypeScript]()
-* [Svelte Kit]()
+* [React - TypeScript]()
+* [Next JS]()
+* [Styled Components]()
 
 
 <!-- GETTING STARTED -->
@@ -117,7 +118,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Christian Smith Mantas - [@casm_101](https://twitter.com/casm_101) - casm202@gmail.com
 
 Project Link: [https://github.com/Casm101/transistor](https://github.com/Casm101/transistor)
 
