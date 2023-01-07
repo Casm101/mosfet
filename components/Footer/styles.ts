@@ -9,7 +9,8 @@ export const StyledFooter = styled.div`
   width: 100%;
   height: 8vh;
 
-  background-color: #0d0d0d;
-  border-top: 1px dashed #1f1f1f;
-	margin-top: 1.5rem;
+  background-color: ${({ theme }) => theme.colors.body};
+  color: ${({ theme }) => theme.colors.text_primary};
+  border-top: 1px dashed ${({ theme }) => theme.colors.text_primary};
+  margin-top: 1.5rem;
 `;

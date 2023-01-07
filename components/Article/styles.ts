@@ -37,13 +37,24 @@ export const ArticleCard = styled.div<{ open: boolean }>`
     overflow: hidden;
     margin-top: 0;
 
-    figure, img, video, iframe {
+    figure {
+      //background-color: ${({ theme }) => theme.colors.text_primary};
+    }
+    img,
+    video,
+    iframe {
       width: 100% !important;
       height: auto;
+
+      filter: grayscale(100%);
+      mix-blend-mode: multiply;
     }
 
     .contents {
-      p, h1, h2 {
+      margin-bottom: 0rem;
+      p,
+      h1,
+      h2 {
         padding: 0.5rem 0;
       }
       a {
@@ -54,6 +65,10 @@ export const ArticleCard = styled.div<{ open: boolean }>`
     &.open {
       max-height: 100%;
       margin-top: 1rem;
+
+      .contents {
+        margin-bottom: 2rem;
+      }
     }
   }
 `;

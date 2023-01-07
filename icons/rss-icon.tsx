@@ -1,7 +1,12 @@
 import React from "react";
+import { useTheme } from "../theme/useTheme";
 import { IIcon } from "../types";
 
-export const RSSIcon = ({ color = "#8F8F8F" }: IIcon) => {
+export const RSSIcon = ({ fill = false, size = { h: 24, w: 24 } }: IIcon) => {
+	
+  const theme = useTheme();
+  const color = theme.theme.colors.text_primary;
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
