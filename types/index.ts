@@ -38,3 +38,10 @@ export interface IBookmark {
 	date: string;
 	content: string;
 }
+
+export interface ITheme {
+  body: string;
+  text_primary: string;
+  text_secondary: string;
+  filter?: string;
+}

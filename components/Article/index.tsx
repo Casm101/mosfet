@@ -11,7 +11,11 @@ export const Article = memo<IArticle>(({ title, content, date, type }) => {
 	const [collapseState, setCollapseState] = useState(false);
 
 	const categories = type.map((t, key) => {
-		return <span key={key}>{t.toUpperCase()}</span>;
+		return (
+      <>
+        <span key={key}>{t.toUpperCase()}</span> ·
+      </>
+    );
 	});
 
   return (

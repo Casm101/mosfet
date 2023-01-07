@@ -7,17 +7,16 @@ export const getStaticProps = async () => {
 	const feedParser = new Parser();
   const rssFeed = await feedParser.parseURL("https://mosfet.net/feed/");
 
-  return {
-    props: {
-    	rssFeed,
-    },
-  };
+	https: return {
+		props: {
+			rssFeed,
+		},
+	};
 };
 
 export default function Home(data: any) {
 
 	console.log("data", data);
-	console.log("content:encoded", data.rssFeed.items[0]["content:encoded"]);
 
 	const articleArray = data.rssFeed.items.map((a: any, key: string) => {
 		return (

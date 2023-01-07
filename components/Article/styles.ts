@@ -37,13 +37,13 @@ export const ArticleCard = styled.div<{ open: boolean }>`
     overflow: hidden;
     margin-top: 0;
 
-    img {
-      width: 100%;
+    figure, img, video, iframe {
+      width: 100% !important;
       height: auto;
     }
 
     .contents {
-      p {
+      p, h1, h2 {
         padding: 0.5rem 0;
       }
       a {
