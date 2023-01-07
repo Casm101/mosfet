@@ -4,6 +4,7 @@ export const NavBar = styled.div`
   position: fixed;
   top: 0;
   left: 0;
+	z-index: 100;
 
   display: flex;
   justify-content: space-between;

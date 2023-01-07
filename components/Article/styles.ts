@@ -46,8 +46,8 @@ export const ArticleCard = styled.div<{ open: boolean }>`
       width: 100% !important;
       height: auto;
 
-      filter: grayscale(100%);
-      mix-blend-mode: multiply;
+      //filter: grayscale(100%);
+      //mix-blend-mode: multiply;
     }
 
     .contents {
@@ -58,7 +58,7 @@ export const ArticleCard = styled.div<{ open: boolean }>`
         padding: 0.5rem 0;
       }
       a {
-        color: #8f8f8f;
+        color: ${({ theme }) => theme.colors.text_primary};
       }
     }
 

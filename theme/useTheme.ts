@@ -3,7 +3,7 @@ import { themes } from "./themes";
 
 export const useTheme = () => {
 
-  const [theme, setTheme] = useState(themes.low_contrast);
+  const [theme, setTheme] = useState(themes.dark);
 
-  return { theme };
+  return { theme, setTheme };
 };
