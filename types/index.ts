@@ -20,4 +20,10 @@ export interface IIcon {
 		h: number,
 		w: number,
 	}
+	onClick?: any;
+}
+
+export interface IDropMenu {
+	className: "left" | "right";
+
 }

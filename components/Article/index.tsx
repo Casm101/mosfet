@@ -1,7 +1,6 @@
 /* eslint-disable react/display-name */
 import React, { memo, useState } from "react";
 import * as dayjs from "dayjs";
-import Image from "next/image";
 
 import { IArticle } from "../../types";
 import { ArticleCard, ArticleList } from "./styles";
